@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let num = prompt('Nhập số tuỳ ý');
+    str = num.toString(); // chuyển num thành chuỗi
+    let result = []; //khai báo mảng trống
+    console.log(num)
+    for (let i = 0; i < str.length; i++) {
+        //duyệt chuỗi str
+        result.push(str[i])
+        //Arr1.push('item1','item2',arr2[i]...)
+        if((str[i]%2 === 0)&&(str[i+1]%2 === 0))
+        {
+            //kiểm tra và nhét '-' vào sau str[i] bằng method push
+            result.push('-');
+        }
+    }
+    console.log(result.join(''));
+</script>
+</html>
